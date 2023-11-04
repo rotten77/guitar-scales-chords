@@ -129,6 +129,14 @@ $(function(){
 			bluesScale[4] = 1;
 			bluesScale[5] = 3;
 
+		var byzantineScale = new Array();
+			byzantineScale[1] = 1;
+			byzantineScale[2] = 3;
+			byzantineScale[3] = 1;
+			byzantineScale[4] = 2;
+			byzantineScale[5] = 1;
+			byzantineScale[6] = 3;
+
 
 		$('td a').click(function(){
 			$('td a').removeClass("badge-success").removeClass("badge-info").css("opacity", 0.3)
@@ -150,6 +158,7 @@ $(function(){
 				case 5: scale = majorPentatonicScale; showChords = false; break;
 				case 6: scale = minorPentatonicScale; showChords = false; break;
 				case 7: scale = bluesScale; showChords = false; break;
+				case 8: scale = byzantineScale; showChords = false; break;
 				default: scale = majorScale; scaleChords = majorChords; scaleChords7 = majorChords7;
 			}
 			// console.log(selectScale);
